@@ -3,10 +3,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Skeleton file</title>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <P> This is a test </P>
+    <header>
+    <h1> Rock Paper Scissors </h1>
+    </header>
+    <div class="score-board"> 
+        <div id="player-label" class="player">user</div>
+        <div id="computer-label" class="player">Comp</div>
+        <span id="user-score">0</span> | <span id="computer-score">0</span>
+    </div>
+    <div class="result">
+        <p> Welcome to the game... Ready? </p>
+    </div>
+
+    <div class="choices"> 
+        <div class="choice" id="r"> 
+            <i class="far fa-hand-rock"></i>
+        </div>
+        <div class="paper" id="p"> 
+            <i class="far fa-hand-paper"></i>
+        </div>
+        <div class="scissors" id="s"> 
+            <i class="far fa-hand-scissors"></i>
+        </div>
+    </div>
+    <p id="instruction"> Choose your weapon</p>
 </body>
 <script type="text/javascript" src="validation.js"></script>
 </html>
