@@ -7,9 +7,15 @@ const result_p = document.querySelector('.result > p');
 const rock_div = document.getElementById('r');
 const paper_div = document.getElementById('p');
 const scissor_div = document.getElementById('s');
+const button_reset = document.getElementById('reset')
+
+/* function to reset score */
+function reset(){
+    button_reset.addEventListener('click',() => location.reload());
+}
+reset();
 
 /* computer choosing rock, paper, scissors */
-
 function getComputerScore() {
     const choices = ['r', 'p', 's'];
     const randomNumber = Math.floor(Math.random()*3);
