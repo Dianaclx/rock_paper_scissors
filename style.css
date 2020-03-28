@@ -132,4 +132,32 @@ body {
 }
 
 
+footer{
+  margin-top: auto;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1em;
+  position: relative;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color:salmon;
+  margin-top: 100px;
+  padding-top: 20px;
+}
+
+.green-glow{
+  border: 4px solid green;
+  box-shadow: 0 0 10px rgb(57, 230, 80);
+}
+
+.red-glow {
+  border: 4px solid red;
+  box-shadow: 0 0 10px rgb(241, 108, 108);
+}
+
+.grey-glow {
+  border: 4px solid grey;
+  box-shadow: 0 0 10px greenyellow;
+}
+
 
