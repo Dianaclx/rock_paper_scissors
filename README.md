@@ -8,8 +8,7 @@ You can find the game here:
 https://dianaclx.github.io/rock_paper_scissors/
 
 ## Herewith the overview: 
-<video width="320" height="320" controls>
-    <source src="https://i.gyazo.com/1bcc24c7c01335aeb55983772f0ce84b.mp4" type="video/mp4">
-</video>    
+
+<img src="https://media.giphy.com/media/db3XoVGal3PDaPD2st/giphy.gif" alt="Example"/>    
 
 
