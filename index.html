@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css"> 
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Rock Paper Scissors</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    <h1> Rock Paper Scissors </h1>
-    <button id="reset"> Reset Score</button>
+      <h1>Rock Paper Scissors</h1>
     </header>
-    <div class="score-board"> 
+
+    <div id="main-menu">
+      <button id="one-round" class="round-button">Quick Game</button>
+      <button id="five-round" class="round-button">Play 5 rounds</button>
+      <button id="unlimited" class="round-button">Play Unlimited</button>
+    </div>
+
+    <div id="game">
+      <button id="reset">Reset Score</button>
+      <div class="score-board">
         <div id="player-label" class="player">user</div>
         <div id="computer-label" class="player">Comp</div>
         <span id="user-score">0</span> | <span id="computer-score">0</span>
-    </div>
-    <div class="result">
-        <p> Welcome to the game... Ready? </p>
-    </div>
+      </div>
+      <div class="result">
+        <p>Welcome to the game... Ready?</p>
+      </div>
 
-    <div class="choices"> 
-                <div class="choice" id="r">
-                    <i class="fa fa-hand-rock" aria-hidden="true"></i>
-                </div>
-                <div class="choice" id="p">
-                    <i class="fa fa-hand-paper"></i>
-                </div>
-                <div class="choice" id="s">
-                    <i class="fa fa-hand-scissors"></i>
-                </div>
+      <div class="choices">
+        <div class="choice" id="r">
+          <i class="fa fa-hand-rock" aria-hidden="true"></i>
+        </div>
+        <div class="choice" id="p">
+          <i class="fa fa-hand-paper"></i>
+        </div>
+        <div class="choice" id="s">
+          <i class="fa fa-hand-scissors"></i>
+        </div>
+      </div>
     </div>
-    <p id="instruction"> Make your move 😈</p>
-</body>
-<script type="text/javascript" src="validation.js"></script>
-<footer> 2020 by Diana :) </footer>
+    <p id="instruction">Make your move 😈</p>
+  </body>
+  <script type="text/javascript" src="validation.js"></script>
+  <footer>2020 by Diana :)</footer>
 </html>
