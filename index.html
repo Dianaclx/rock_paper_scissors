@@ -9,16 +9,17 @@
   <body>
     <header>
       <h1>Rock Paper Scissors</h1>
+      <button id="reset">Main Menu</button>
     </header>
 
     <div id="main-menu">
+      <h2>Select Game type</h2>
       <button id="one-round" class="round-button">Quick Game</button>
-      <button id="five-round" class="round-button">Play 5 rounds</button>
-      <button id="unlimited" class="round-button">Play Unlimited</button>
+      <button id="five-round" class="round-button">5 Round Game</button>
+      <button id="unlimited" class="round-button">Unlimited</button>
     </div>
 
-    <div id="game">
-      <button id="reset">Reset Score</button>
+    <div id="game" class="fadeout">
       <div class="score-board">
         <div id="player-label" class="player">user</div>
         <div id="computer-label" class="player">Comp</div>
@@ -40,7 +41,7 @@
         </div>
       </div>
     </div>
-    <p id="instruction">Make your move 😈</p>
+    <p id="instruction" class="rainbow">Make your move 😈</p>
   </body>
   <script type="text/javascript" src="validation.js"></script>
   <footer>2020 by Diana :)</footer>

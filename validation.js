@@ -1,8 +1,8 @@
 let userScore = 0;
 let compScore = 0;
-const button_one_round = document.getElementById("one-round");
-const button_five_round = document.getElementById("five-round");
-const button_unlimited = document.getElementById("unlimited");
+const button_one_round = document.getElementById(".one-round");
+const button_five_round = document.getElementById(".five-round");
+const button_unlimited = document.getElementById(".unlimited");
 const userScore_span = document.getElementById("user-score");
 const compScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
@@ -11,15 +11,14 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
 const button_reset = document.getElementById("reset");
+const intro_screen = document.querySelector(".main-menu");
+const match = document.querySelector(".game");
 
-// load buttons
-function buttons() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+function startgame() {
+  $forEach{}.addEventListener("click", () => {
+    intro_screen.classList.add("fadeout");
+    startgame();
+  });
 }
 
 /* function to reset score */
