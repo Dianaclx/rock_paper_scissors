@@ -11,15 +11,15 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
 const button_reset = document.getElementById("reset");
-const intro_screen = document.querySelector(".main-menu");
+const intro_screen = document.querySelector(".main-menu button");
 const match = document.querySelector(".game");
 
 function startgame() {
-  $forEach{}.addEventListener("click", () => {
+  button_one_round.addEventListener("click", () => {
     intro_screen.classList.add("fadeout");
-    startgame();
   });
 }
+startgame();
 
 /* function to reset score */
 function reset() {
