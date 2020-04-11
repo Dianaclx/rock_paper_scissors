@@ -36,7 +36,7 @@ header > button {
   margin: 0;
 }
 
-.main-menu {
+#main-menu {
   height: 100vh;
   padding: 30px;
   font-family: monospace, sans-serif;
@@ -44,9 +44,10 @@ header > button {
   justify-content: space-around;
   text-align: center;
   margin: 10px;
+  transition: opacity 0.5s ease;
 }
 
-.main-menu h2 {
+#main-menu h2 {
   font-size: 2em;
   display: block;
   padding-bottom: 30px;
@@ -168,12 +169,13 @@ header > button {
   background-color: #d5f5d5;
 }
 
-.game {
+#game {
   height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -20%);
+  transition: opacity 0.5s ease;
 }
 
 .score-board {
@@ -363,12 +365,10 @@ footer {
 
 div.fadeout {
   pointer-events: none;
-  transition: opacity 0.5s ease;
   opacity: 0;
 }
 
 div.fadein {
   pointer-events: all;
-  transition: opacity 0.5s ease;
   opacity: 1;
 }

@@ -1,8 +1,5 @@
 let userScore = 0;
 let compScore = 0;
-const button_one_round = document.getElementById("one-round");
-const button_five_round = document.getElementById("five-round");
-const button_unlimited = document.getElementById("unlimited");
 const userScore_span = document.getElementById("user-score");
 const compScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
@@ -12,23 +9,26 @@ const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
 const button_reset = document.getElementById("reset");
 
-const intro_screen_div = document.querySelector(".main-menu");
-const game_div = document.querySelector(".game");
+//Main Menu
+const btn1 = document.getElementById("one-round");
+const btn2 = document.getElementById("five-round");
+const btn3 = document.getElementById("unlimited");
+const menu_div = document.getElementById("main-menu");
+const game_div = document.getElementById("game");
+
+function reset() {
+  button_reset.addEventListener("click", () => location.reload());
+}
+reset();
 
 function startgame1() {
-  button_one_round.addEventListener("click", () => {
-    intro_screen_div.classList.add("fadeout");
+  btn1.addEventListener("click", () => {
+    menu_div.classList.add("fadeout");
     game_div.classList.add("fadein");
   });
 }
+startgame1();
 
-//
-///* function to reset score */
-//function reset() {
-//  button_reset.addEventListener("click", () => location.reload());
-//}
-//reset();
-//
 ///* computer choosing rock, paper, scissors */
 //function getComputerScore() {
 //  const choices = ["r", "p", "s"];
