@@ -19,7 +19,7 @@ header > h1 {
   text-align: center;
   font-family: monospace, Arial, Helvetica, sans-serif;
   font-size: 3em;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
 }
 
 header > button {
@@ -155,18 +155,9 @@ header > button {
   }
 }
 
-#one-round {
+#letsplay {
   margin-right: 35px;
   background-color: pink;
-}
-
-#five-round {
-  margin-right: 35px;
-  background-color: powderblue;
-}
-
-#unlimited {
-  background-color: #d5f5d5;
 }
 
 #game {
@@ -219,14 +210,14 @@ header > button {
 }
 
 .result > p {
-  text-align: center;
   font-weight: bold;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 .choices {
   text-align: center;
-  margin: 50px 10px;
-  padding: 10px;
+  margin: 30px 5px;
+  padding: 15px;
 }
 .choice {
   border: 4px solid white;
@@ -336,7 +327,7 @@ header > button {
 }
 
 footer {
-  margin-top: auto;
+  color: whitesmoke;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 1em;

@@ -1,5 +1,6 @@
 let userScore = 0;
 let compScore = 0;
+let counter = 0;
 const userScore_span = document.getElementById("user-score");
 const compScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
@@ -10,9 +11,7 @@ const scissor_div = document.getElementById("s");
 const button_reset = document.getElementById("reset");
 
 //Main Menu
-const btn1 = document.getElementById("one-round");
-const btn2 = document.getElementById("five-round");
-const btn3 = document.getElementById("unlimited");
+const btn1 = document.getElementById("letsplay");
 const menu_div = document.getElementById("main-menu");
 const game_div = document.getElementById("game");
 
